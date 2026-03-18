@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ShopWith - Checkout</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <header class="topbar">
+    <a href="index.html" class="site-logo">Shop<span>With</span></a>
+    <nav class="page-links">
+      <a href="index.html">Home</a>
+      <a href="cart.html">Cart</a>
+      <a href="checkout.html" class="on">Checkout</a>
+    </nav>
+    <a href="cart.html" class="cart-link">🛒 Cart (<span id="nav-count">0</span>)</a>
+  </header>
+
+  <main class="checkout-page">
+    <h2 class="page-title">Checkout</h2>
+
+    <div class="checkout-layout">
+
+      <div class="form-box">
+        <h3>Delivery Details</h3>
+        <form id="order-form" novalidate>
+
+          <div class="field">
+            <label for="inp-name">Full Name</label>
+            <input type="text" id="inp-name" placeholder="e.g. Matovu Peter" />
+            <span class="err-text" id="err-name"></span>
+          </div>
+
+          <div class="field">
+            <label for="inp-email">Email Address</label>
+            <input type="email" id="inp-email" placeholder="e.g. MPeter@mail.com" />
+            <span class="err-text" id="err-email"></span>
+          </div>
+
+          <div class="field">
+            <label for="inp-phone">Phone Number</label>
+            <input type="tel" id="inp-phone" placeholder="e.g. 0712345678" />
+            <span class="err-text" id="err-phone"></span>
+          </div>
+
+          <div class="field">
+            <label for="inp-address">Delivery Address</label>
+            <textarea id="inp-address" rows="3" placeholder="e.g. Plot 45, Kampala Road"></textarea>
+            <span class="err-text" id="err-address"></span>
+          </div>
+
+          <button type="button" id="place-btn">Place Order</button>
+
+        </form>
+      </div>
+
+      <aside class="order-box">
+        <h3>Your Order</h3>
+        <div id="order-list"></div>
+        <p id="co-empty" class="hidden">No items. <a href="index.html">Go shopping</a>.</p>
+        <div class="sum-row">
+          <span>Subtotal</span>
+          <span id="co-sub">$0.00</span>
+        </div>
+        <div class="sum-row">
+          <span>Shipping</span>
+          <span id="co-ship">$0.00</span>
+        </div>
+        <div class="sum-row final">
+          <span>Total</span>
+          <span id="co-tot">$0.00</span>
+        </div>
+      </aside>
+
+    </div>
+  </main>
+
+  <div class="popup-bg hidden" id="done-popup">
+    <div class="popup-box">
+      <div class="icon">🎉</div>
+      <h3>Order Placed!</h3>
+      <p>Thank you for shopping with ShopWith. Your order is on its way.</p>
+      <a href="index.html" class="btn-main">Back to Shop</a>
+    </div>
+  </div>
+
+  <div id="toast-box"></div>
+
+  <footer class="site-footer">
+    <p>&copy; 2025 ShopWith. All rights reserved.</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ShopWith</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <header class="topbar">
+    <a href="index.html" class="site-logo">Shop<span>With</span></a>
+    <nav class="page-links">
+      <a href="index.html" class="on">Home</a>
+      <a href="cart.html">Cart</a>
+      <a href="checkout.html">Checkout</a>
+    </nav>
+    <a href="cart.html" class="cart-link">🛒 Cart (<span id="nav-count">0</span>)</a>
+  </header>
+
+  <section class="hero-section">
+    <h1>Welcome to <span>ShopWith</span></h1>
+    <p>Browse phones, laptops, clothes, books and more — all in one place.</p>
+    <a href="#shop" class="btn-main">Shop Now</a>
+  </section>
+
+  <div class="controls-bar" id="shop">
+    <div class="search-row">
+      <input type="text" id="search-bar" placeholder="Search products..." />
+    </div>
+    <div class="filter-row">
+      <button class="filter-btn picked" data-category="All">All</button>
+      <button class="filter-btn" data-category="Electronics">Electronics</button>
+      <button class="filter-btn" data-category="Fashion">Fashion</button>
+      <button class="filter-btn" data-category="Books">Books</button>
+      <button class="filter-btn" data-category="Home">Home</button>
+      <button class="filter-btn" data-category="Sports">Sports</button>
+    </div>
+  </div>
+
+  <div class="shop-area">
+
+    <div id="shop-grid">
+
+      <div class="pcard" data-id="1" data-category="Electronics" data-name="iPhone 15 Pro">
+        <div class="pcard-img">
+          <img src="images/iphone15pro.jpg" alt="iPhone 15 Pro" />
+        </div>
+        <div class="pcard-body">
+          <p class="pcard-cat">Electronics</p>
+          <h3 class="pcard-title">iPhone 15 Pro</h3>
+          <div class="pcard-bottom">
+            <span class="pcard-price">UGX 3,696,300</span>
+            <button class="btn-add" data-id="1">+ Add</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="pcard" data-id="2" data-category="Electronics" data-name="MacBook Air M3">
+        <div class="pcard-img">
+          <img src="images/macbook.jpg" alt="MacBook Air M3" />
+        </div>
+        <div class="pcard-body">
+          <p class="pcard-cat">Electronics</p>
+          <h3 class="pcard-title">MacBook Air M3</h3>
+          <div class="pcard-bottom">
+            <span class="pcard-price">UGX 4,066,300</span>
+            <button class="btn-add" data-id="2">+ Add</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="pcard" data-id="3" data-category="Electronics" data-name="Samsung 4K TV">
+        <div class="pcard-img">
+          <img src="images/samsung-tv.webp" alt="Samsung 4K TV" />
+        </div>
+        <div class="pcard-body">
+          <p class="pcard-cat">Electronics</p>
+          <h3 class="pcard-title">Samsung 4K TV</h3>
+          <div class="pcard-bottom">
+            <span class="pcard-price">UGX 2,516,000</span>
+            <button class="btn-add" data-id="3">+ Add</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="pcard" data-id="4" data-category="Electronics" data-name="Sony Headphones">
+        <div class="pcard-img">
+          <img src="images/sony-headphones.webp" alt="Sony Headphones" />
+        </div>
+        <div class="pcard-body">
+          <p class="pcard-cat">Electronics</p>
+          <h3 class="pcard-title">Sony Headphones</h3>
+          <div class="pcard-bottom">
+            <span class="pcard-price">UGX 1,291,300</span>
+            <button class="btn-add" data-id="4">+ Add</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="pcard" data-id="5" data-category="Electronics" data-name="iPad Air">
+        <div class="pcard-img">
+          <img src="images/ipad-air.webp" alt="iPad Air" />
+        </div>
+        <div class="pcard-body">
+          <p class="pcard-cat">Electronics</p>
+          <h3 class="pcard-title">iPad Air</h3>
+          <div class="pcard-bottom">
+            <span class="pcard-price">UGX 2,771,300</span>
+            <button class="btn-add" data-id="5">+ Add</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="pcard" data-id="6" data-category="Fashion" data-name="Nike Air Max">
+        <div class="pcard-img">
+          <img src="images/nike-airmax.webp" alt="Nike Air Max" />
+        </div>
+        <div class="pcard-body">
+          <p class="pcard-cat">Fashion</p>
+          <h3 class="pcard-title">Nike Air Max</h3>
+          <div class="pcard-bottom">
+            <span class="pcard-price">UGX 518,000</span>
+            <button class="btn-add" data-id="6">+ Add</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="pcard" data-id="7" data-category="Fashion" data-name="Levi's 501 Jeans">
+        <div class="pcard-img">
+          <img src="images/levi-jeans.jpg" alt="Levi's 501 Jeans" />
+        </div>
+        <div class="pcard-body">
+          <p class="pcard-cat">Fashion</p>
+          <h3 class="pcard-title">Levi's 501 Jeans</h3>
+          <div class="pcard-bottom">
+            <span class="pcard-price">UGX 329,300</span>
+            <button class="btn-add" data-id="7">+ Add</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="pcard" data-id="8" data-category="Fashion" data-name="Zara Wool Coat">
+        <div class="pcard-img">
+          <img src="images/zara-coat.webp" alt="Zara Wool Coat" />
+        </div>
+        <div class="pcard-body">
+          <p class="pcard-cat">Fashion</p>
+          <h3 class="pcard-title">Zara Wool Coat</h3>
+          <div class="pcard-bottom">
+            <span class="pcard-price">UGX 736,300</span>
+            <button class="btn-add" data-id="8">+ Add</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="pcard" data-id="9" data-category="Books" data-name="Atomic Habits">
+        <div class="pcard-img">
+          <img src="images/atomic-habits.webp" alt="Atomic Habits" />
+        </div>
+        <div class="pcard-body">
+          <p class="pcard-cat">Books</p>
+          <h3 class="pcard-title">Atomic Habits</h3>
+          <div class="pcard-bottom">
+            <span class="pcard-price">UGX 66,600</span>
+            <button class="btn-add" data-id="9">+ Add</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="pcard" data-id="10" data-category="Books" data-name="Deep Work">
+        <div class="pcard-img">
+          <img src="images/deep-work.webp" alt="Deep Work" />
+        </div>
+        <div class="pcard-body">
+          <p class="pcard-cat">Books</p>
+          <h3 class="pcard-title">Deep Work</h3>
+          <div class="pcard-bottom">
+            <span class="pcard-price">UGX 59,200</span>
+            <button class="btn-add" data-id="10">+ Add</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="pcard" data-id="11" data-category="Books" data-name="The Alchemist">
+        <div class="pcard-img">
+          <img src="images/alchemist.jpg" alt="The Alchemist" />
+        </div>
+        <div class="pcard-body">
+          <p class="pcard-cat">Books</p>
+          <h3 class="pcard-title">The Alchemist</h3>
+          <div class="pcard-bottom">
+            <span class="pcard-price">UGX 51,800</span>
+            <button class="btn-add" data-id="11">+ Add</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="pcard" data-id="12" data-category="Home" data-name="Nespresso Machine">
+        <div class="pcard-img">
+          <img src="images/nespresso-machine.webp" alt="Nespresso Machine" />
+        </div>
+        <div class="pcard-body">
+          <p class="pcard-cat">Home</p>
+          <h3 class="pcard-title">Nespresso Machine</h3>
+          <div class="pcard-bottom">
+            <span class="pcard-price">UGX 699,300</span>
+            <button class="btn-add" data-id="12">+ Add</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="pcard" data-id="13" data-category="Home" data-name="Dyson Vacuum">
+        <div class="pcard-img">
+          <img src="images/dyson.jpg" alt="Dyson Vacuum" />
+        </div>
+        <div class="pcard-body">
+          <p class="pcard-cat">Home</p>
+          <h3 class="pcard-title">Dyson Vacuum</h3>
+          <div class="pcard-bottom">
+            <span class="pcard-price">UGX 2,771,300</span>
+            <button class="btn-add" data-id="13">+ Add</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="pcard" data-id="14" data-category="Sports" data-name="Yoga Mat">
+        <div class="pcard-img">
+          <img src="images/yoga-mat.jpg" alt="Yoga Mat" />
+        </div>
+        <div class="pcard-body">
+          <p class="pcard-cat">Sports</p>
+          <h3 class="pcard-title">Yoga Mat</h3>
+          <div class="pcard-bottom">
+            <span class="pcard-price">UGX 203,500</span>
+            <button class="btn-add" data-id="14">+ Add</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="pcard" data-id="15" data-category="Sports" data-name="Whey Protein 2kg">
+        <div class="pcard-img">
+          <img src="images/whey-protein.webp" alt="Whey Protein 2kg" />
+        </div>
+        <div class="pcard-body">
+          <p class="pcard-cat">Sports</p>
+          <h3 class="pcard-title">Whey Protein 2kg</h3>
+          <div class="pcard-bottom">
+            <span class="pcard-price">UGX 240,500</span>
+            <button class="btn-add" data-id="15">+ Add</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="pcard" data-id="16" data-category="Sports" data-name="Garmin Watch">
+        <div class="pcard-img">
+          <img src="images/garmin-watch.webp" alt="Garmin Watch" />
+        </div>
+        <div class="pcard-body">
+          <p class="pcard-cat">Sports</p>
+          <h3 class="pcard-title">Garmin Watch</h3>
+          <div class="pcard-bottom">
+            <span class="pcard-price">UGX 1,106,300</span>
+            <button class="btn-add" data-id="16">+ Add</button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <p id="empty-msg" class="hidden">No products found. Try a different search.</p>
+
+  </div>
+
+  <div id="toast-box"></div>
+
+  <footer class="site-footer">
+    <p>&copy; 2025 ShopWith. All rights reserved.</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

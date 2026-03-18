@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ShopWith - Cart</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <header class="topbar">
+    <a href="index.html" class="site-logo">Shop<span>With</span></a>
+    <nav class="page-links">
+      <a href="index.html">Home</a>
+      <a href="cart.html" class="on">Cart</a>
+      <a href="checkout.html">Checkout</a>
+    </nav>
+    <a href="cart.html" class="cart-link">🛒 Cart (<span id="nav-count">0</span>)</a>
+  </header>
+
+  <main class="cart-page">
+    <h2 class="page-title">Your Cart</h2>
+
+    <div class="cart-layout">
+
+      <div>
+        <div id="cart-rows"></div>
+
+        <div id="no-items" class="hidden">
+          <h3>Your cart is empty</h3>
+          <p>You have not added anything yet.</p>
+          <a href="index.html" class="btn-main">Start Shopping</a>
+        </div>
+      </div>
+
+      <aside id="price-summary">
+        <h3>Order Summary</h3>
+        <div class="sum-row">
+          <span>Subtotal</span>
+          <span id="sub-amount">$0.00</span>
+        </div>
+        <div class="sum-row">
+          <span>Shipping</span>
+          <span id="ship-amount">$0.00</span>
+        </div>
+        <div class="sum-row final">
+          <span>Total</span>
+          <span id="tot-amount">$0.00</span>
+        </div>
+        <a href="checkout.html" class="btn-checkout">Proceed to Checkout</a>
+        <a href="index.html" class="btn-back">Continue Shopping</a>
+      </aside>
+
+    </div>
+  </main>
+
+  <div id="toast-box"></div>
+
+  <footer class="site-footer">
+    <p>&copy; 2025 ShopWith. All rights reserved.</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
