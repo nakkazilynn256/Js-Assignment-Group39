@@ -7,7 +7,7 @@
 }
 
 body {
-  font-family: Georgia, serif;
+  font-family: Georgia, serif, Arial black;
   background-color: #f9f6f1 !important;
   color: #222;
 }
@@ -539,7 +539,7 @@ a {
 }
 
 .popup-box {
-  background-color: #fff;
+  background-color: RGB(0,0,0,0,45;
   border-radius: 8px;
   padding: 40px 30px;
   text-align: center;
