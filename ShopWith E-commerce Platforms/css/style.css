@@ -28,7 +28,7 @@ a {
   align-items: center;
   justify-content: space-between;
   padding: 14px 40px;
-  background-color: #fff;
+  background-color: #c97a3a;
   border-bottom: 1px solid #ddd;
   position: sticky;
   top: 0;
@@ -179,12 +179,6 @@ a {
   box-shadow: 0 4px 14px rgba(0,0,0,0.1);
 }
 
-.pcard-img {
-  
-  
-  
-  
-}
 
 .pcard-body {
   padding: 14px;
